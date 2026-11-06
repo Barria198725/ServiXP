@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "ServiXP",
+    "slug": "NoviasVirtuales2",
+    "scheme": "servixp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F8FAFC",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#101619",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ServiXP necesita acceso a tus fotos para mostrar tu perfil y trabajos realizados.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-document-picker",
+      "expo-secure-store"
+    ]
+  }
+}
